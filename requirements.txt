@@ -1,0 +1,4 @@
+# OpenText Studio uses only the Python standard library.
+# No runtime dependencies.
+#
+# Python 3.7+ required.
