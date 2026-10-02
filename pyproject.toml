@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opentext-studio"
+version = "1.0.0"
+description = "Turn any text into colored ASCII art. Generates static .txt files and runnable .py animations — 6 styles, 17 colors, 11 animation types. ENG + RUS output, English UI. Zero dependencies, pure Python 3.7+."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [{ name = "magic4n" }]
+keywords = ["ascii", "art", "ansi", "terminal", "cli", "animation", "color", "cyrillic"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Artistic Software",
+    "Topic :: Terminals",
+]
+
+[project.urls]
+Homepage = "https://github.com/magic4n/opentext-studio"
+Repository = "https://github.com/magic4n/opentext-studio"
+Issues = "https://github.com/magic4n/opentext-studio/issues"
+
+[project.scripts]
+opentext = "studio:main"
+
+[tool.setuptools]
+py-modules = ["studio"]
